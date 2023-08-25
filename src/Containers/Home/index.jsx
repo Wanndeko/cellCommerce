@@ -1,9 +1,7 @@
+import { Wrapper } from './style'
+
 function Home() {
-  return (
-    <>
-      <h1>Hello world</h1>
-    </>
-  )
+  return <Wrapper></Wrapper>
 }
 
 export default Home

@@ -6,8 +6,9 @@ import DefaultLayout from '../layout/DefaultLayout'
 function MultRoutes() {
   return (
     <Routes>
-      <Route element={<DefaultLayout />} />
-      <Route path="/" element={<Home />} />
+      <Route element={<DefaultLayout />}>
+        <Route path="/" element={<Home />} />
+      </Route>
     </Routes>
   )
 }
