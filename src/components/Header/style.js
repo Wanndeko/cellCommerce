@@ -2,7 +2,9 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   height: 100px;
+  width: 100%;
   background-color: #34f;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
