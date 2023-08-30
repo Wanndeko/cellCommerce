@@ -9,6 +9,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 24px;
+  z-index: 4;
 `
 
 export const Image = styled.img`

@@ -1,16 +1,20 @@
-import { CardContainer } from './style'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 
+import formatCurrency from '../../utils/formatCurrency'
+import { CardContainer } from './style'
 function CardProducts({ data }) {
   return (
     <CardContainer>
       <img
-        src="https://http2.mlstatic.com/D_957717-MLA70842622219_082023-W.jpg"
+        src={data.thumbnail.replace(/\w\.jpg/gi, 'W.jpg ')}
         alt="imagem do celular"
       />
-      <p>+</p>
+      <button>
+        <FavoriteBorderIcon />
+      </button>
       <div>
         <p>{data.title}</p>
-        <p>{data.price}</p>
+        <p className="currency">{formatCurrency(data.price)}</p>
       </div>
     </CardContainer>
   )
